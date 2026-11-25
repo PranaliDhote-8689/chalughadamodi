@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>स्पर्धा परीक्षा चालू घडामोडी — लवकरच आपल्या सेवेत</title>
+  <link rel="icon" type="image/png" href="myphoto.png" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Noto Sans Devanagari", "Nirmala UI", system-ui, -apple-system, sans-serif;
+      background-color: #fbf4e6;
+      color: #2b1d0e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    .header-box {
+      width: 100%;
+      max-width: 920px;
+      background-color: #fdf6e9;
+      border: 1px solid #ead8b8;
+      border-radius: 14px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      box-shadow: 0 8px 24px rgba(43, 29, 14, 0.08);
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: left;
+    }
+
+    .logo-box {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(43, 29, 14, 0.22);
+    }
+
+    .logo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .main-title {
+      font-size: clamp(1.45rem, 3.5vw, 2.35rem);
+      font-weight: 800;
+      color: #24180c;
+      line-height: 1.2;
+    }
+
+    .sub-title {
+      font-size: clamp(0.92rem, 1.8vw, 1.15rem);
+      font-weight: 600;
+      color: #a85a14;
+      margin-top: 4px;
+    }
+
+    .pill-tag {
+      background: linear-gradient(90deg, #e86f1c, #cf5308);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: clamp(0.95rem, 1.8vw, 1.15rem);
+      padding: 12px 22px;
+      border-radius: 10px;
+      white-space: nowrap;
+      box-shadow: 0 4px 12px rgba(207, 83, 8, 0.25);
+    }
+
+    .launch-message {
+      margin-top: 42px;
+      font-size: clamp(2.2rem, 6.5vw, 4.2rem);
+      font-weight: 900;
+      color: #b45309;
+      line-height: 1.25;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 720px) {
+      .header-box {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .brand-left {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .pill-tag {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header-box">
+    <div class="brand-left">
+      <div class="logo-box">
+        <img src="myphoto.png" alt="स्पर्धा परीक्षा चालू घडामोडी लोगो" />
+      </div>
+      <div>
+        <div class="main-title">स्पर्धा परीक्षा चालू घडामोडी</div>
+        <div class="sub-title">स्पर्धा परीक्षांसाठी दैनिक चालू घडामोडी व सराव संच</div>
+      </div>
+    </div>
+    <div class="pill-tag">🎯 संकल्प स्पर्धा परीक्षेचा!</div>
+  </header>
+
+  <main class="launch-message">
+    लवकरच आपल्या सेवेत
+  </main>
+</body>
+</html>
