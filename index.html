@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light only" />
   <title>स्पर्धा परीक्षा चालू घडामोडी — लवकरच आपल्या सेवेत</title>
   <link rel="icon" type="image/png" href="myphoto.png" />
 
@@ -21,6 +22,10 @@
   <meta name="twitter:image" content="https://chalughadamodi.com/myphoto.png" />
 
   <style>
+    :root {
+      color-scheme: light only;
+    }
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -30,44 +35,44 @@
     body {
       min-height: 100vh;
       font-family: "Noto Sans Devanagari", "Nirmala UI", system-ui, -apple-system, sans-serif;
-      background-color: #fbf4e6;
-      color: #2b1d0e;
+      background-color: #f7ecd6;
+      color: #23160a;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 24px 16px;
+      padding: 24px 14px;
       text-align: center;
     }
 
     .header-box {
       width: 100%;
       max-width: 920px;
-      background-color: #fdf6e9;
-      border: 1px solid #ead8b8;
+      background-color: #fdf6e7;
+      border: 1.5px solid #dec192;
       border-radius: 14px;
-      padding: 18px 22px;
+      padding: 16px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 18px;
-      box-shadow: 0 8px 24px rgba(43, 29, 14, 0.08);
+      gap: 14px;
+      box-shadow: 0 8px 24px rgba(43, 29, 14, 0.11);
     }
 
     .brand-left {
       display: flex;
       align-items: center;
-      gap: 16px;
+      gap: 14px;
       text-align: left;
     }
 
     .logo-box {
-      width: 76px;
-      height: 76px;
+      width: clamp(54px, 11vw, 76px);
+      height: clamp(54px, 11vw, 76px);
       border-radius: 50%;
       overflow: hidden;
       flex-shrink: 0;
-      box-shadow: 0 4px 12px rgba(43, 29, 14, 0.22);
+      box-shadow: 0 4px 12px rgba(43, 29, 14, 0.25);
     }
 
     .logo-box img {
@@ -78,52 +83,52 @@
     }
 
     .main-title {
-      font-size: clamp(1.45rem, 3.5vw, 2.35rem);
+      font-size: clamp(1.1rem, 3.5vw, 2.35rem);
       font-weight: 800;
-      color: #24180c;
+      color: #1f1308;
       line-height: 1.2;
     }
 
     .sub-title {
-      font-size: clamp(0.92rem, 1.8vw, 1.15rem);
+      font-size: clamp(0.76rem, 1.8vw, 1.15rem);
       font-weight: 600;
-      color: #a85a14;
+      color: #9e4f0e;
       margin-top: 4px;
     }
 
     .pill-tag {
-      background: linear-gradient(90deg, #e86f1c, #cf5308);
+      background: linear-gradient(90deg, #e86f1c, #c94e06);
       color: #ffffff;
       font-weight: 700;
-      font-size: clamp(0.95rem, 1.8vw, 1.15rem);
-      padding: 12px 22px;
+      font-size: clamp(0.78rem, 1.8vw, 1.15rem);
+      padding: 10px 18px;
       border-radius: 10px;
       white-space: nowrap;
-      box-shadow: 0 4px 12px rgba(207, 83, 8, 0.25);
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(201, 78, 6, 0.3);
     }
 
     .launch-message {
       margin-top: 42px;
-      font-size: clamp(2.2rem, 6.5vw, 4.2rem);
+      font-size: clamp(2rem, 6.5vw, 4.2rem);
       font-weight: 900;
-      color: #b45309;
+      color: #a84905;
       line-height: 1.25;
       letter-spacing: 0.5px;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 520px) {
       .header-box {
-        flex-direction: column;
-        text-align: center;
+        padding: 14px 12px;
+        gap: 10px;
       }
 
       .brand-left {
-        flex-direction: column;
-        text-align: center;
+        gap: 10px;
       }
 
       .pill-tag {
-        white-space: normal;
+        padding: 8px 12px;
       }
     }
   </style>
